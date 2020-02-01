@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>qt可执行文件打包</title>
+    <url>/2020/02/01/qt%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</url>
+    <content><![CDATA[<hr>
+<p>说明：Qt平台生成的可执行文件在没有安装Qt的电脑上运行需要先进行配置才能使用，直接进入步骤。</p>
+<h1 id="1-生成可执行文件（-exe）"><a href="#1-生成可执行文件（-exe）" class="headerlink" title="1.生成可执行文件（.exe）"></a>1.生成可执行文件（.exe）</h1><p>先在Qt中将模式设置为 release，再编译一下。如图：<br><img src="/img/Qt_release.png" width="60%" height="60%" alt="图片" align=center></p>
+<p>在对应的release文件夹中找到.exe文件。（即你的项目文件目录）如图：<br><img src="/img/Findexe.png" width="60%" height="90%" alt="图片" align=center></p>
+<h1 id="2-将可执行文件放入新建的文件夹中"><a href="#2-将可执行文件放入新建的文件夹中" class="headerlink" title="2.将可执行文件放入新建的文件夹中"></a>2.将可执行文件放入新建的文件夹中</h1><p>随意建立一个文件夹，将目标.exe文件复制到文件夹里。<br>例如建立一个 Minesweeper文件夹</p>
+<h1 id="3-进行配置"><a href="#3-进行配置" class="headerlink" title="3.进行配置"></a>3.进行配置</h1><p>配置无非是将Qt中要求的文件放入建立的文件夹中一并打包发出，所以方法很多，最简单的是使用Qt自己提供的工具，一般工具会在安装目录中。例如如图：<br><img src="/img/FindQtTool.png" width="60%" height="60%" alt="图片" align=center><br>点开工具跳转到刚才建立的文件夹并输入指令：<br>如图：<br><img src="/img/Howtousetool.png" width="90%" height="90%" alt="图片" align=center><br>点击回车就会发现文件夹添加好了需要的文件，这个时候这个文件夹里的.exe文件就可以在没有安装Qt的电脑上直接运行了。<br><img src="/img/Thelastdisplay.png" width="60%" height="60%" alt="图片" align=center></p>
+<h2 id="完工！！！"><a href="#完工！！！" class="headerlink" title="完工！！！"></a>完工！！！</h2>]]></content>
+      <categories>
+        <category>-Qt</category>
+      </categories>
+  </entry>
+  <entry>
     <title>这是一篇测试文章</title>
     <url>/2020/01/31/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<hr>
-<p>正在测试用hexoeditor来进行hexo编辑，体验还行，接下来尝试将其部署到github。<br>现在学习将界面完善。<br><img src="/img/20200131114722765.png" width="60%" height="60%" alt="图片" align=center></p>
+<h1 id="测试一级标题"><a href="#测试一级标题" class="headerlink" title="测试一级标题"></a>测试一级标题</h1><p>正在测试用hexoeditor来进行hexo编辑，体验还行，接下来尝试将其部署到github。<br>现在学习将界面完善。</p>
+<h2 id="测试二级标题"><a href="#测试二级标题" class="headerlink" title="测试二级标题"></a>测试二级标题</h2><img src="/img/20200131114722765.png" width="60%" height="60%" alt="图片" align=center>
+
 <hr>
 ]]></content>
       <categories>
