@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>qt创建无边界窗口</title>
+    <title>Qt中鼠标双击事件实现</title>
+    <url>/2020/02/02/Qt%E4%B8%AD%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E4%BA%8B%E4%BB%B6/</url>
+    <content><![CDATA[<hr>
+<p><strong>背景：</strong><br>在日常使用中经常会用到鼠标的双击事件，而Qt本身只提供了鼠标单击事件，在用到双击事件的场景中需要自己定义实现。<br><strong>思路：</strong><br>利用定时器来进行判断。设置一个定时器，当单击时就触发定时器，在一定时间内（由自己设定的定时器时间，双击一般为300ms）再次接受到单击信号则触发双击事件。<br><strong>代码实现：</strong><br>tips: 可以多加一个标志变量Is来判断；<br> QTimer *time=new QTimer;<br>            //当按下了鼠标左键<br>            connect(mine,&amp;Mine::pressLeft ,<a href="">=</a>{<br>                time-&gt;stop();<br>                time-&gt;start(400);<br>                Is++;<br>            });<br>            //判断是单击还是双击<br>            Eggs *e=new Eggs;<br>            connect(time,&amp;QTimer::timeout,<a href="">=</a><br>            {<br>                if(Is==1)<br>                {<br>                    //单击事件<br>                    time-&gt;stop();<br>                     Is=0;<br>                }<br>                if(Is==2)<br>                    {<br>                    //双击事件<br>                    time-&gt;stop();<br>                    Is=0;//记得重新置零<br>                }<br>            });</p>
+<p>这里述标双击的对象是按钮，在其他控件的使用中思路也是一样的。</p>
+]]></content>
+      <categories>
+        <category>Qt</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Qt创建无边界窗口</title>
     <url>/2020/02/02/qt%E4%B8%AD%E5%88%9B%E5%BB%BA%E6%97%A0%E8%BE%B9%E7%95%8C%E7%AA%97%E5%8F%A3/</url>
     <content><![CDATA[<hr>
 <p>背景：在做一个ui界面的时候，为了让界面更加美观，想要隐藏掉窗口自带的标题栏，隐藏掉以后窗口就没有了默认的缩小、放大、关闭，一切的操作都由自己定义。在查阅了帮助文档和一些博客以后得到方法：</p>
@@ -15,7 +26,7 @@
       </categories>
   </entry>
   <entry>
-    <title>qt可执行文件打包</title>
+    <title>Qt可执行文件打包</title>
     <url>/2020/02/01/qt%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</url>
     <content><![CDATA[<hr>
 <p>说明：Qt平台生成的可执行文件在没有安装Qt的电脑上运行需要先进行配置才能使用，直接进入步骤。</p>
