@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>数据库基本语法</title>
+    <url>/2020/04/26/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<hr>
+<h1 id="数据库基本语法："><a href="#数据库基本语法：" class="headerlink" title="数据库基本语法："></a>数据库基本语法：</h1><h2 id="建立与插入："><a href="#建立与插入：" class="headerlink" title="建立与插入："></a>建立与插入：</h2><h3 id="建立表："><a href="#建立表：" class="headerlink" title="建立表："></a>建立表：</h3><p>Create table &lt;表名&gt;（&lt;列名&gt;&lt;数据类型&gt;[列级完整性约束条件]，<br>&lt;列名&gt;&lt;数据类型&gt;[列级完整性约束条件]）；</p>
+<h3 id="修改表："><a href="#修改表：" class="headerlink" title="修改表："></a>修改表：</h3><p>Alter table &lt;表名&gt;<br>[add &lt;新列名&gt; &lt;数据类型&gt; [完整性约束] ]<br>[add &lt;表级完整性约束&gt; ]<br>[drop &lt;列名&gt;  [restrict | cascade] ]<br>[drop constraint &lt;完整性约束名&gt; [restrict | cascade] ]<br>[alter column &lt;列名&gt;&lt;数据类型&gt; ]；</p>
+<h3 id="删除表："><a href="#删除表：" class="headerlink" title="删除表："></a>删除表：</h3><p>Delete table &lt;表名&gt; [restrict | cascade]；<br>Restrict 表示限制性删除，cascade则是无限制删除。</p>
+<h3 id="插入数据："><a href="#插入数据：" class="headerlink" title="插入数据："></a>插入数据：</h3><p>Insert into &lt;表名&gt; (属性列1，[属性列2]，…)<br>Values (常量1，[常量2],…)；</p>
+<h3 id="修改数据："><a href="#修改数据：" class="headerlink" title="修改数据："></a>修改数据：</h3><p>Update &lt;表名&gt;<br>Set &lt;列名&gt;=&lt;表达式&gt;,[&lt;列名&gt;=&lt;表达式&gt;]…<br>[Where &lt;条件&gt;]；</p>
+<h3 id="删除数据："><a href="#删除数据：" class="headerlink" title="删除数据："></a>删除数据：</h3><p>Delete<br>From &lt;表名&gt;<br>[where &lt;条件&gt;]；</p>
+<h2 id="查询："><a href="#查询：" class="headerlink" title="查询："></a>查询：</h2><h3 id="查询数据："><a href="#查询数据：" class="headerlink" title="查询数据："></a>查询数据：</h3><p>Select [all | distinct] &lt;目标列&gt;，[&lt;目标列表达式&gt;…]<br>From &lt;表名1&gt;，[&lt;表名2&gt;]<br>[where &lt;条件表达式&gt;]<br>[group by &lt;列名&gt; having &lt;条件表达式&gt;]<br>[order by &lt;列名&gt; [asc | desc] ]</p>
+<p>提示：select * 代表查询全部列。</p>
+<h2 id="聚集函数："><a href="#聚集函数：" class="headerlink" title="聚集函数："></a>聚集函数：</h2><p>Count(*)  统计元组个数<br>Count([distinct | all] &lt;列名&gt;) 统计一列中值的个数<br>Avg([distinct | all] &lt;列名&gt;) 求一列值的平均值<br>Sum ([distinct | all] &lt;列名&gt;) 求一列值的总和<br>Max ([distinct | all] &lt;列名&gt;) 求一列值的最大值<br>Min ([distinct | all] &lt;列名&gt;) 求一列值的最小值<br>注意：聚集函数不能直接在Where语句中使用</p>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Qt中鼠标双击事件实现</title>
     <url>/2020/02/02/Qt%E4%B8%AD%E9%BC%A0%E6%A0%87%E5%8F%8C%E5%87%BB%E4%BA%8B%E4%BB%B6/</url>
     <content><![CDATA[<hr>
