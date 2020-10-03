@@ -234,6 +234,8 @@ document.write("欢迎学习javascript");
 <h3 id="2-外链式"><a href="#2-外链式" class="headerlink" title="2.外链式"></a>2.外链式<br/></h3><p>和css中的外链式一样，javascript中的外链式是先建立一个.js文件，然后在html中链入。如下：</p>
 <p>&lt;head&gt;<br/><br>&lt;title&gt;外链式javascript&lt;/title&gt;<br/><br>&lt;script type=”text/javascript” src=”demo01.js”&gt;<br/><br>&lt;/script&gt;<br/><br>&lt;/head&gt;&gt;<br/></p>
 <h2 id="3-一些语法区别"><a href="#3-一些语法区别" class="headerlink" title="3.一些语法区别"></a>3.一些语法区别<br/></h2><p>1.javascript是一种弱类型语言，无需像java 中那样指定定义类型，可以直接 var a=1;var b=”str”;这两种定义方式都是可以的。<br/><br>2.javascript中定义函数的关键字是 <b>function</b> 例如 function add(){函数体；}<br/><br>3.javascript中的局部变量：定义在函数以内的变量，只能被函数内调用。<br/><br>4.javascript中的全局变量：定义在函数体外的变量，在整个html界面都可以被调用。<br/><br>5.javascript中的判断语句、循环语句、运算符等语法和java都无差异。</p>
+<h1 id="续"><a href="#续" class="headerlink" title="续"></a>续</h1><p>1.setInterval函数，每隔固定的时间就执行一次。<br>setInterval（”要执行的函数”,时间间隔(单位为毫秒)）,例如：setInterval(“timenow();”,1000);</p>
+<p>2.setTimeout函数，固定时间后执行一次且只执行一次<br>例如3秒后弹出”hello”<br>setTimeout(function(){ alert(“Hello”); }, 3000);</p>
 ]]></content>
       <categories>
         <category>Java web</category>
