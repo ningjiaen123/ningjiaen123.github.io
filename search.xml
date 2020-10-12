@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>软件工程概述学习笔记02</title>
+    <url>/2020/10/11/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%BF%B0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/</url>
+    <content><![CDATA[<h1 id="软件生存期模型"><a href="#软件生存期模型" class="headerlink" title="软件生存期模型"></a>软件生存期模型</h1><p>典型的模型包括：瀑布模型、快速原型模型、增量模型、螺旋模型、统一过程、敏捷模型</p>
+<h2 id="1-瀑布模型"><a href="#1-瀑布模型" class="headerlink" title="1.瀑布模型"></a>1.瀑布模型</h2><p>概述：<br>瀑布模型是一种高规范化的模型，每一步都有严格的文档限制，其上一步骤的输出往往是下一步骤的输入。<br>优点：<br>开发人员都按照规范化方法进行开发，每个步骤都有文档可寻，每个步骤也都有严格评审，保证了产品的质量和后期维护性。<br>缺点：<br>不够灵活，一般需要提前分析出所有的需求，而客户的需求往往是不确定的，也就导致了可能最后开发出的产品和客户所想不一致。</p>
+<h2 id="2-快速原型模型"><a href="#2-快速原型模型" class="headerlink" title="2.快速原型模型"></a>2.快速原型模型</h2><p>概述：<br>快速原型模型往往快速实现最终功能的某一部分或界面用于展示给客户，往往快速原型都不是用于最终开发的产品，其只是一个粗糙的样品，一旦需求确定，可以将原型抛弃。<br>优点：<br>快速给用户展示出样品，有助于需求的调整，得出真正的需求。开发人员在原型的建立过程中也学习到了一定的技术和经验。</p>
+<h2 id="3-增量模型"><a href="#3-增量模型" class="headerlink" title="3.增量模型"></a>3.增量模型</h2><p>概述：<br>增量模型是先迅速开发核心功能，再一步步逐渐完善其他功能的模型。由多个构件组成，而往往第一个构件用于实现最核心的功能。<br>优点：增量模型可以迅速向用户展示一些可以使用的核心功能，且项目的开发风险较小，某个构件出现问题后不会影响到整个项目。<br>缺点：每个新的构件在添加到原有构件当中去，会不断破坏原有产品，且必须保证添加的逻辑足够合理。</p>
+<h2 id="4-螺旋模型"><a href="#4-螺旋模型" class="headerlink" title="4.螺旋模型"></a>4.螺旋模型</h2><p>概述：<br>螺旋模型是将瀑布模型和快速模型原型结合起来的一种模型，再每一个步骤前面都要进行严格的风险分析。共包括了四个方面活动：目标设定、风险估计与弱化、开发与验证、计划。<br>优点：<br>严格的要求保证了软件的质量、减少了过多测试或测试不足所带来的风险。<br>缺点：<br>螺旋模型的特点是由风险估计来驱动的，这就要求开发人员有足够的测试、评估风险经验。</p>
+<h2 id="5-统一模型"><a href="#5-统一模型" class="headerlink" title="5.统一模型"></a>5.统一模型</h2><p>概述：……<font color="red">（pass）</font><br>核心过程工作流：业务建模、需求、分析与设计、实现、测试和部署<br><font color="red">（有点小难,学不来，pass）</font></p>
+<h2 id="6-敏捷过程"><a href="#6-敏捷过程" class="headerlink" title="6.敏捷过程"></a>6.敏捷过程</h2><p>敏捷软件开发宣言：<br><font color="red">个体和交互</font><strong>胜过</strong><font color="blue">过程和工具</font>；<br><font color="red">可工作软件</font><strong>胜过</strong><font color="blue">宽泛的文档</font>；<br><font color="red">客户合作生活</font><strong>胜过</strong><font color="blue">合同谈判</font>；<br><font color="red">响应变更</font><strong>胜过</strong><font color="blue">遵循计划</font>。<br>敏捷原则：<br><img src="/img/敏捷原则.png" /></p>
+<h1 id="续"><a href="#续" class="headerlink" title="续"></a>续</h1><p>习题：<br><img src="/img/软工习题02.png" /></p>
+]]></content>
+      <categories>
+        <category>软件工程概述</category>
+      </categories>
+  </entry>
+  <entry>
     <title>计算机网络第一章学习总结</title>
     <url>/2020/10/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h1 id="1-互联网概述"><a href="#1-互联网概述" class="headerlink" title="1.互联网概述"></a>1.互联网概述</h1><h2 id="1-1网络的网络"><a href="#1-1网络的网络" class="headerlink" title="1.1网络的网络"></a>1.1网络的网络</h2><p>计算机网络（网络）：由若干节点和连接这些节点的链路组成。<br>互连网：将许多网络由路由器连接在一起，因此也称为网络的网络。<br>总结：网络将多个计算机连接在一起，而互连网又将多个网络连接在一起。网络中连接的计算机通常称为主机（host）。</p>
